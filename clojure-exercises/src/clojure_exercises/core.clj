@@ -1,4 +1,4 @@
-(ns clojure-ex.core)
+(ns clojure-exercises.core)
 
 (defn foo
   "I don't do a whole lot."
