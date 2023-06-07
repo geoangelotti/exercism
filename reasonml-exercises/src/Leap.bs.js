@@ -15,6 +15,5 @@ function isLeapYear(year) {
   }
 }
 
-exports.remainderOf = remainderOf;
 exports.isLeapYear = isLeapYear;
 /* No side effect */

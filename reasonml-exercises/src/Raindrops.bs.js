@@ -46,8 +46,5 @@ function raindrops(n) {
   }
 }
 
-exports.divi = divi;
-exports.clean = clean;
-exports.clean2 = clean2;
 exports.raindrops = raindrops;
 /* No side effect */
