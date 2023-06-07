@@ -6,8 +6,8 @@
 package leap
 
 func RemainderOf(year, n int) bool {
-	return year%n == 0
-}
+    return year % n == 0
+} 
 
 // IsLeapYear should have a comment documenting it.
 func IsLeapYear(year int) bool {
@@ -15,14 +15,14 @@ func IsLeapYear(year int) bool {
 	// Then remove all the stock comments.
 	// They're here to help you get started but they only clutter a finished solution.
 	// If you leave them in, reviewers may protest!
-	if RemainderOf(year, 400) {
-		return true
-	}
-	if RemainderOf(year, 100) {
-		return false
-	}
-	if RemainderOf(year, 4) {
-		return true
-	}
+    if RemainderOf(year, 400) {
+        return true
+    }
+    if RemainderOf(year, 100) {
+        return false
+    }
+    if RemainderOf(year, 4) {
+        return true
+    }
 	return false
 }
