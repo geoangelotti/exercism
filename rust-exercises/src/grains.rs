@@ -1,13 +1,14 @@
-pub fn square(s: u32) -> u64 {
+fn square(s: u32) -> u64 {
     if (1..65).contains(&s) {
         return 2u64.pow(s - 1);
     }
     panic!("Square must be between 1 and 64")
 }
 
-pub fn total() -> u64 {
+fn total() -> u64 {
     u64::MAX
 }
+
 #[cfg(test)]
 mod tests {
     use super::*;

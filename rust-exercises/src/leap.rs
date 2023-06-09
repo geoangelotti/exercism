@@ -1,4 +1,4 @@
-pub fn is_leap_year(year: u64) -> bool {
+fn is_leap_year(year: u64) -> bool {
     if remainder_of(year, 400) {
         return true;
     }
