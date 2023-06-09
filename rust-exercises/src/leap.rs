@@ -1,18 +1,10 @@
 fn is_leap_year(year: u64) -> bool {
-    if remainder_of(year, 400) {
-        return true;
+    match (year % 400 == 0, year % 100 == 0, year % 4 == 0) {
+        (true, _, _) => true,
+        (_, true, _) => false,
+        (_, _, true) => true,
+        _ => false,
     }
-    if remainder_of(year, 100) {
-        return false;
-    }
-    if remainder_of(year, 4) {
-        return true;
-    }
-    return false;
-}
-
-fn remainder_of(year: u64, n: u64) -> bool {
-    year % n == 0
 }
 
 #[cfg(test)]
